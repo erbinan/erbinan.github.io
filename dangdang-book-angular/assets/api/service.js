@@ -9,7 +9,7 @@ app.factory('commonService',['$http',function($http){
    */
   service.getData = function(type,callBack){
     $http({
-      url:'/dangdang-book-angular/data/book_'+type+'.json',
+      url:'../data/book_'+type+'.json',
       method:'get'
     })
     .then(function(res){
